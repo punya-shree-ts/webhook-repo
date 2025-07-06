@@ -53,15 +53,6 @@ webhook-repo/
 ├── requirements.txt # Python dependencies
 
 
-
-yaml
-
-Copy
-
-Edit
-
-
-
 ---
 
 
@@ -69,21 +60,9 @@ Edit
 \## 📡 Webhook Endpoint
 
 
-
 The server exposes:
 
-
-
 POST /webhook
-
-
-
-yaml
-
-Copy
-
-Edit
-
 
 
 GitHub sends JSON payloads here, and the app handles:
@@ -116,35 +95,15 @@ Set up .env:
 
 
 
-env
-
-Copy
-
-Edit
-
 MONGO\_URI=mongodb://localhost:27017/webhookDB
 
 Start MongoDB:
 
 
-
-bash
-
-Copy
-
-Edit
-
 mongod --dbpath "C:\\data\\db"
 
 Run Flask server:
 
-
-
-bash
-
-Copy
-
-Edit
 
 python app.py
 
@@ -163,24 +122,10 @@ To test with real GitHub events:
 Use ngrok to expose the Flask server:
 
 
-
-bash
-
-Copy
-
-Edit
-
 ngrok http 5000
 
 Copy the HTTPS link and add it as a webhook to your GitHub repo (action-repo):
 
-
-
-bash
-
-Copy
-
-Edit
 
 Payload URL: https://<ngrok-id>.ngrok-free.app/webhook
 
@@ -190,61 +135,27 @@ Events: Push + Pull Request
 
 📸 Sample Output
 
-vbnet
-
-Copy
-
-Edit
 
 Punya pushed to main on 6 July 2025 - 12:34 PM UTC
 
 Punya submitted a pull request from dev to main on 6 July 2025 - 12:40 PM UTC
 
 👩‍💻 Built With
-
 Flask
-
-
-
 MongoDB
-
-
-
 Ngrok
-
-
-
 GitHub Webhooks
-
-
 
 🧠 Author
 
 Punya Shree T S
-
 punyashree7.27@gmail.com
-
-
-
-yaml
-
-Copy
-
-Edit
-
-
-
-</details>
-
 
 
 ---
 
 
-
 \### 📍 Step 3: Save and Close Notepad
-
-
 
 After pasting → `Ctrl + S` to save → `Ctrl + W` to close
 
@@ -255,8 +166,6 @@ After pasting → `Ctrl + S` to save → `Ctrl + W` to close
 
 
 \### 📍 Step 4: Add, Commit \& Push to GitHub
-
-
 
 In terminal:
 
